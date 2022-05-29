@@ -1,0 +1,38 @@
+{
+  "name": "video",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "knex": "./node_modules/.bin/knex --knexfile src/database/database.connection.ts",
+    "watch-server": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bad-words": "^3.0.0",
+    "ejs": "^3.1.8",
+    "knex": "^2.1.0",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-ejs": "^4.3.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^10.1.1",
+    "koa-static": "^5.0.0",
+    "pg": "^8.7.3",
+    "socket.io": "^2.2.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-bodyparser": "^4.3.7",
+    "@types/koa-logger": "^3.1.2",
+    "@types/koa-router": "^7.4.4",
+    "@types/uuid": "^8.3.4",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
